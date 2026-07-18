@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>OMNI IS AWAKE</title>
+	<link rel="stylesheet" href="style.css" media="all">
+</head>
+<body>
+
+	<!-- ============================================================
+	     着陆区：#container — Logo + 三按钮
+	     position: fixed, top: 40%, 居中
+	     用户首次看到此区域，向下滚动进入 #index
+	     ============================================================ -->
+	<div id="top"></div>
+	<div id="container">
+		<a id="h" href="https://omni.vi/stardust/voyager">
+			<img src="assets/vi.png">
+		</a>
+		<div class="buttons">
+			<a href="https://omni.vi/login/"><img src="assets/candle.png"></a>
+			<a href="#index"><img src="assets/down.gif"></a>
+			<a href="https://omni.vi/ekklesia"><img src="assets/feather.png"></a>
+		</div>
+	</div>
+
+	<!-- ============================================================
+	     截图区域 A：#index — 全屏黑色容器
+	     margin-top: 105vh 推到视口下方，滚动吸附
+	     border-top: 2px solid white 分隔线
+	     ============================================================ -->
+	<div id="index">
+
+		<!-- ============================================================
+		     截图区域 B：.index-grid — CSS Grid 主布局
+		     grid-template-rows: 40px 177px 140px 150px 149px 136px 120px
+		     背景图: guardians.png（抖动像素天使雕塑）
+		     max-width: 980px, height: 1200px, gap: 10px
+		     ============================================================ -->
+		<div class="index-grid">
+
+			<!-- 截图区域 G：第 1 行 — 向上箭头（高度 40px） -->
+			<div class="gc">
+				<a href="#top" id="hide"><img src="assets/ups.png" alt="up"></a>
+			</div>
+
+			<!-- ============================================================
+			     截图区域 C/D/E/F：第 2 行 — home（高度 177px）
+			     section: border-left: 1px solid white, margin-left: 300px
+			     h1: flex, height: 35px, font-size: 24px
+			     h1 b: border 3面白色, border-right: none, padding-left: 5px
+			     h1::after: hl.png 角标
+			     .flexy: flex-wrap, gap: 5px
+			     .flexy a: border 1px white, padding 0.5ch, font-size: 18px, color #C0C0C0
+			     ============================================================ -->
+			<div class="gc">
+				<section>
+					<h1><b>home</b></h1>
+					<div class="flexy">
+						<a href="https://omni.vi/hexa/lyte">about omni</a>
+						<a href="https://omni.vi/paths/">paths</a>
+						<a href="https://omni.vi/OM/NIDISPLAY">quitting instagram</a>
+						<a href="https://omni.vi/alethiometer/">alethiometer</a>
+						<a href="https://omni.vi/card/">contact</a>
+						<a href="http://users3.smartgb.com/g/g.php?a=s&amp;i=g36-32988-ea">guestbook</a>
+						<a href="https://omni.vi/stardust/">tracklist</a>
+						<a href="https://omni.vi/conduit/">the conduit</a>
+						<a href="https://omni.vi/angels/about.html">project breakdown::angels</a>
+					</div>
+				</section>
+			</div>
+
+			<!-- 截图区域 C/D/E/F：第 3 行 — galleries（高度 140px） -->
+			<div class="gc">
+				<section>
+					<h1><b>galleries</b></h1>
+					<div class="flexy">
+						<a href="https://omni.vi/works/">glitch art</a>
+						<a href="https://omni.vi/photography/">photography</a>
+						<a href="https://omni.vi/CDN/Wallpapers.zip">download::wallpapers</a>
+						<a href="https://drive.google.com/drive/folders/1fjnMW4YJutApb_3Rjefif3a3lzMBYOWw?usp=sharing">drive::works::[2019-2024]</a>
+					</div>
+				</section>
+			</div>
+
+			<!-- 截图区域 C/D/E/F：第 4 行 — technology（高度 150px） -->
+			<div class="gc">
+				<section>
+					<h1><b>technology</b></h1>
+					<div class="flexy">
+						<a href="https://omni.vi/blog/arch.html">(opinionated) arch install guide</a>
+						<a href="https://omni.vi/blog/setup.html">linux rice</a>
+						<a href="https://omni.vi/blog/mac.html">trying macOS</a>
+						<a href="https://omni.vi/blog/glitchart.html">glitchart guide</a>
+					</div>
+				</section>
+			</div>
+
+			<!-- 截图区域 C/D/E/F：第 5 行 — demos（高度 149px） -->
+			<div class="gc">
+				<section>
+					<h1><b>demos</b></h1>
+					<div class="flexy">
+						<a href="https://omni.vi/demos/diffuse">demo::error diffusion dithering</a>
+						<a href="https://omni.vi/demos/ordered">demo::ordered dithering</a>
+					</div>
+				</section>
+			</div>
+
+			<!-- 截图区域 H：第 6 行 — 无形分隔符 hr.sp（高度 136px） -->
+			<hr class="sp">
+
+			<!-- 截图区域 C/D/E/F：第 7 行 — articles（高度 120px）
+			     注意: articles 之后的 creative writing 不在 grid 行定义内，
+			     由 grid auto-rows 自动处理 -->
+			<div class="gc">
+				<section>
+					<h1><b>articles</b></h1>
+					<div class="flexy">
+						<a href="https://omni.vi/blog/stargate">converts (stargate)</a>
+						<a href="https://omni.vi/blog/mortality">morality::mortality</a>
+						<a href="https://omni.vi/blog/privacy">right to privacy</a>
+					</div>
+				</section>
+			</div>
+
+			<!-- 截图区域 C/D/E/F：第 8 行 — creative writing -->
+			<div class="gc">
+				<section>
+					<h1><b>creative writing</b></h1>
+					<div class="flexy">
+						<a href="https://omni.vi/spirits/oracle">lost spirits</a>
+						<a href="https://omni.vi/blog/oculus">dancing eyes</a>
+						<a href="https://omni.vi/hexa/luna">psalter de luna</a>
+					</div>
+				</section>
+			</div>
+
+		</div>
+
+		<!-- ============================================================
+		     截图区域 I：footer — 版权信息
+		     color: lightgray, text-align: center, margin-top: -6ch
+		     ============================================================ -->
+		<footer>
+			~ 2020-2026 &#x2B21; omni.vi. ~ <br>
+			<a href="https://omni.vi/angels/faith">This site is protected by Internet Angels.</a>
+		</footer>
+
+	</div>
+
+<script>
+document.getElementById('hide').addEventListener('click', function(e) {
+	e.preventDefault();
+	window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+</body>
+</html>
